@@ -1,0 +1,23 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <div class = 'login'>
+        {% csrf_token %}
+        <p>欢迎使用比赛评分系统PC端，请登录</p>
+        <form action="" method="post" id = 'pc-login'>
+            <label for="pc-login">账号</label><input type="text" name="pk" id="pk" placeholder="请输入手机号或邮箱"><br>
+            <label for="pc-login">密码</label><input type="password" name="password" id="password"><br>
+            <input type="submit" value="登录">
+            <!-- 所有相关链接暂时不可用 2021-2-25 -->
+            <a href="https://sharelim.xyz/login/register/"><input type="button" value="注册"></a>
+        </form>
+    </div>
+</body>
+</html>

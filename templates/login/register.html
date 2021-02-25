@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+</head>
+<body>
+    {% csrf_token %}
+    <div class = 'register'>
+        <form method="POST">
+            <label>手机号</label><input type="number" name="phone" id="phone" minlength="11"><br>
+            <label>邮箱</label><input type="email" name="email" id="email"><br>
+            <label>密码</label><input type="password" name="password" id="passwd"><br>
+            <input type="submit" value="注册">
+        </form>
+    </div>
+</body>
+</html>
